@@ -1,0 +1,122 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-color: #e0e7ff;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px
+}
+
+img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+h2{
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+}
+
+p{
+    color: hsl(224, 23%, 55%)
+}
+
+main{
+    padding: 20px
+}
+
+header p{
+    text-align: center;
+}
+
+section{
+    background: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+section svg{
+    padding: 20px
+}
+
+section a p{
+    position: absolute;
+    top: 66%;
+    left: 75%
+}
+
+section a p, a:link, a:visited{
+    color: hsl(245, 75%, 52%);
+    
+}
+
+.anual{
+    color: black
+}
+
+#card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #8a92ab;
+    width: 30%;
+}
+
+#proceed{
+    width: 94%;
+    background: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #cecece;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    transform: translateY(10px)
+}
+
+#proceed:hover{
+    cursor: pointer;
+    background: #766cf1;
+}
+
+#cancel{
+    transition: all 0.3s ease;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    padding: 20px;
+    transform: translateY(10px)
+}
+
+#cancel a{
+    transition: all 0.3s ease
+}
+
+#cancel a:hover{
+    cursor: pointer;
+    color: black
+}
+
+@media(max-width: 930px){
+    body{
+        font-size: 12px
+    }
+
+    #card{
+        width: 70%
+    }
+}
+
+@media(max-width: 350px){
+    #card{
+        width: 80%;
+        height: 90%
+    }  
+}
